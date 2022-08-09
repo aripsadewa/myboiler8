@@ -1,13 +1,3 @@
-@extends('layouts.app',['title' => 'Contact'])
-@section('content')
-@component('components.alert')
-        @slot('title')
-            ini title
-        @endslot
-        ini children
-        @slot('footer')
-            ini footer
-        @endslot
-    @endcomponent
-    This is Contact
-@endsection
+<x-app-layout>
+    <h1>Contact</h1>
+</x-app-layout>

@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/app.css">
+    {{ $styles }}
     <title>{{ $title }} | Boiler</title>
 </head>
 <body>
     <x-navbar></x-navbar>
-    @yield('content')
+    {{ $slot }}
     <script src="js/app.js"></script>
 </body>
 </html>
